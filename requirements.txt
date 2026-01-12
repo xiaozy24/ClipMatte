@@ -1,0 +1,11 @@
+# Requirements for the bettercopy project
+# Install with: pip install -r requirements.txt
+
+# OpenCV for image I/O and windowing (provides `cv2`)
+opencv-python>=4.7.0
+
+# NumPy for array operations used in image processing
+numpy>=1.24.0
+
+# Watchdog to monitor the filesystem for new screenshots
+watchdog>=2.2.0
