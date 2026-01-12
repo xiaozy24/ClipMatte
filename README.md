@@ -32,7 +32,7 @@
 ## 项目结构
 
 ```
-bettercopy/
+ClipMatte/
 ├── images/              # 待处理的图片
 ├── pimages/             # 处理后的图片
 ├── copy.py          # 复制功能

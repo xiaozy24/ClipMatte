@@ -1,4 +1,4 @@
-# Requirements for the bettercopy project
+# Requirements for the ClipMatte project
 # Install with: pip install -r requirements.txt
 
 # OpenCV for image I/O and windowing (provides `cv2`)
