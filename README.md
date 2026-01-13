@@ -12,15 +12,15 @@
 
 项目采用不同功能分离的设计，分为以下三个主要部分：
 
-### 除色 (`decolor.py`)
+### 除色 (`newdecolor.py`)
 - 采用鼠标取色获得指定颜色
 - 去除图片中的指定颜色为透明
 
-### 粘贴 (`paste.py`)
+### 粘贴 (`newpaste.py`)
 - 调用粘贴脚本（`CopyFileToClipboard.ps1`）
 - 将（/pimages）下文件粘贴进剪贴板中
 
-### 复制 (`copy.py`)
+### 复制 (`newcopy.py`)
 - 监控系统截图文件夹的改动
 - 复制最新截图进入（/images）文件夹
 - 运行主程序处理完整逻辑
@@ -35,9 +35,9 @@
 ClipMatte/
 ├── images/              # 待处理的图片
 ├── pimages/             # 处理后的图片
-├── copy.py          # 复制功能
-├── decolor.py         # 除色功能
-├── paste.py    # 粘贴功能
+├── newcopy.py          # 复制功能
+├── newdecolor.py         # 除色功能
+├── newpaste.py    # 粘贴功能
 ├── CopyFileToClipboard.ps1    # 粘贴功能脚本
 ├── requirements.txt      # 项目依赖
 └── README.md             # 项目说明文档
@@ -58,11 +58,11 @@ pip install -r requirements.txt
 #### 方式一：手动除色
 ```bash
 # 仅运行除色程序，在（/images）文件夹下手动添加图片（需要命名为test.png），在（/pimages）文件夹下手动获取处理后的图片
-python decolor.py
+python newdecolor.py
 ```
 
 #### 方式二：截图处理
 ```bash
 # 启动自动处理截图的脚本，需要手动选择所除颜色
-python copy.py
+python newcopy.py
 ```

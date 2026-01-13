@@ -4,8 +4,8 @@ import time
 import threading
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
-from decolor import process_image
-from paste import run_powershell_copy_script
+from newdecolor import process_image
+from newpaste import run_powershell_copy_script
 from config import SOURCE_DIR
 
 # 配置参数（根据你的实际路径修改）
